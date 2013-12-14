@@ -141,6 +141,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     Launcher3 \
+    stz \
     DSPManager \
     libcyanogen-dsp \
     audio_effects.conf \

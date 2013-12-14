@@ -274,19 +274,19 @@ endif
 
 ifeq ($(CM_BUILDTYPE), RELEASE)
     ifndef TARGET_VENDOR_RELEASE_BUILD_ID
-        CM_VERSIONs := $(PRODUCT_VERSION_MAJOR)
+        CM_VERSION := $(PRODUCT_VERSION_MAJOR)
     else
         ifeq ($(TARGET_BUILD_VARIANT),user)
-            CM_VERSIONs := $(PRODUCT_VERSION_MAJOR)
+            CM_VERSION := $(PRODUCT_VERSION_MAJOR)
         else
-            CM_VERSIONs := $(PRODUCT_VERSION_MAJOR)
+            CM_VERSION := $(PRODUCT_VERSION_MAJOR)
         endif
     endif
 else
     ifeq ($(PRODUCT_VERSION_MINOR),0)
-        CM_VERSIONs := $(PRODUCT_VERSION_MAJOR)
+        CM_VERSION := $(PRODUCT_VERSION_MAJOR)
     else
-        CM_VERSIONs := $(PRODUCT_VERSION_MAJOR)
+        CM_VERSION := $(PRODUCT_VERSION_MAJOR)
     endif
 endif
 
